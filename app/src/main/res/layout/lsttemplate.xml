@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="167dp"
+        android:layout_height="140dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="عميل خاص"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ثلاجه"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="جوالين"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/topGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".67" />
+
+
+    <TextView
+        android:id="@+id/txtAreaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="المنطقه"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
+
+    <Spinner
+        android:id="@+id/areaSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/txtAreaName"
+        app:layout_constraintLeft_toRightOf="@+id/imgAdd"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideLine"
+        app:layout_constraintTop_toTopOf="@id/txtAreaName" />
+
+
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_person_add_black_24dp"
+        app:layout_constraintBottom_toTopOf="@id/upperAddressLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topGuideLine"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtMarketName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="اسم الماركت"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAreaName"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editTxtMarketName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="اسم الماركت"
+        app:layout_constraintBottom_toBottomOf="@id/txtMarketName"
+        app:layout_constraintLeft_toRightOf="@id/imgAdd"
+        app:layout_constraintRight_toLeftOf="@id/rightGuideLine"
+        app:layout_constraintTop_toTopOf="@id/txtMarketName" />
+
+
+    <TextView
+        android:id="@+id/txtCstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="اسم العميل"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMarketName" />
+
+    <EditText
+        android:id="@+id/editTxtCstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="الأسم"
+        app:layout_constraintBottom_toBottomOf="@id/txtCstName"
+        app:layout_constraintLeft_toRightOf="@id/imgAdd"
+        app:layout_constraintRight_toLeftOf="@id/rightGuideLine"
+        app:layout_constraintTop_toTopOf="@id/txtCstName" />
+
+
+    <TextView
+        android:id="@+id/txtPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="رقم التليفون"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCstName" />
+
+    <EditText
+        android:id="@+id/editTxtPhoneNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="رقم التليفون"
+        app:layout_constraintBottom_toBottomOf="@id/txtPhoneNum"
+        app:layout_constraintLeft_toRightOf="@id/imgAdd"
+        app:layout_constraintRight_toLeftOf="@id/rightGuideLine"
+        app:layout_constraintTop_toTopOf="@id/txtPhoneNum" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="العنوان"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/editTxtAddress"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPhoneNum"
+        app:layout_constraintTop_toTopOf="@id/editTxtAddress" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upperAddressLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".65" />
+
+    <EditText
+        android:id="@+id/editTxtAddress"
+        android:layout_width="255dp"
+        android:layout_height="0dp"
+        android:hint="العنوان"
+        app:layout_constraintBottom_toTopOf="@id/lowerAddressLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upperAddressLine" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/lowerAddressLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".9" />
+
+
+</android.support.constraint.ConstraintLayout>
