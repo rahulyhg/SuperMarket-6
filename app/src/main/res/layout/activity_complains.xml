@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main3Activity">
+    tools:context=".CompliansActivity">
 
-<!--
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
@@ -39,5 +38,5 @@
         android:textSize="36sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="620dp" />-->
+        tools:layout_editor_absoluteY="620dp" />
 </android.support.constraint.ConstraintLayout>
