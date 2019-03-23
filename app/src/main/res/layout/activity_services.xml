@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServicesActivity">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upperGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1"
+        />
+
+    <ImageView
+        android:id="@+id/imgReciet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_assignment_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upperGuideline"
+        />
+
+    <TextView
+        android:id="@+id/txtSalesReciect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="فاتوره مبيعات"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/imgReciet"
+        app:layout_constraintLeft_toLeftOf="@id/imgReciet"
+        app:layout_constraintTop_toBottomOf="@+id/imgReciet"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/imgAddCst"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_person_add_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSalesReciect"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtAddCst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اضافه عميل"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/imgAddCst"
+        app:layout_constraintLeft_toLeftOf="@id/imgAddCst"
+        app:layout_constraintTop_toBottomOf="@+id/imgAddCst"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgWriteReports"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_report_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAddCst"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtWriteReports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="كتاية التقارير"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@id/imgWriteReports"
+        app:layout_constraintLeft_toLeftOf="@id/imgWriteReports"
+        app:layout_constraintTop_toBottomOf="@+id/imgWriteReports"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
