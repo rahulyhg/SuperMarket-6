@@ -15,7 +15,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 
-public class MainActivity extends Activity {
+public class LoginActivity extends Activity {
 
     ConnectionClass connectionClass;
     EditText edtuserid, edtpass;
@@ -26,11 +26,11 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         connectionClass = new ConnectionClass();
-        edtuserid = (EditText) findViewById(R.id.edtuserid);
-        edtpass = (EditText) findViewById(R.id.edtpass);
+        edtuserid = (EditText) findViewById(R.id.editTxtUserName_loginActivity);
+        edtpass = (EditText) findViewById(R.id.editTxtPassword);
         btnlogin = (Button) findViewById(R.id.btnlogin);
         pbbar = (ProgressBar) findViewById(R.id.pbbar);
         pbbar.setVisibility(View.GONE);
@@ -63,10 +63,10 @@ public class MainActivity extends Activity {
         @Override
         protected void onPostExecute(String r) {
             pbbar.setVisibility(View.GONE);
-            Toast.makeText(MainActivity.this, r, Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, r, Toast.LENGTH_SHORT).show();
 
             if (isSuccess) {
-                Intent i = new Intent(MainActivity.this,Addproducts.class);
+                Intent i = new Intent(LoginActivity.this,Addproducts.class);
                 startActivity(i);
                 finish();
             }
